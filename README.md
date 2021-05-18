@@ -36,7 +36,7 @@ The dermoscopic images are pre-processed using Berkeley wavelet transform by app
 <img src="https://user-images.githubusercontent.com/63542593/118668047-24210d00-b812-11eb-83d0-967f9f1e5e7f.png" width="900">             
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dermoscopic Image &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  BWT Feature Map &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Ground Truth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Predicted Mask &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lesion boundary detection
+&nbsp;&nbsp; Dermoscopic Image &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  BWT Feature Map &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Ground Truth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Predicted Mask &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lesion boundary
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118668646-b0cbcb00-b812-11eb-82f9-5961a7cb45cd.png" width="900">             
