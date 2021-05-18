@@ -9,7 +9,7 @@ of lesion boundaries for accurate cancerous region localization.
 We present a fully automated architecture for accurately detecting border and segmenting the skin lesion by coupling a deep learning model with the Berkeley wavelet transform map derived from the specific kernel filters. Our proposed method effectively combines the Berkeley wavelet transform feature maps into a deep learning U-Net model trained in an end-to-end manner, which results in the reduction of the number of trainable parameters.
 
 ## Preprocessing
-The dermoscopic images are pre-processed using Berkeley wavelet transform by applying the 8 mother wavelets on the dermoscopic images to form the berkeley wavelet decomposed image. 
+The dermoscopic images are pre-processed using Berkeley wavelet transform[1] by applying the 8 mother wavelets on the dermoscopic images to form the berkeley wavelet decomposed image. 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118661413-b9210780-b80c-11eb-8896-c551c1877c8c.png" width="700">             
 </p>
@@ -86,10 +86,12 @@ The dermoscopic images are pre-processed using Berkeley wavelet transform by app
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118668845-da84f200-b812-11eb-83be-00eea0286c92.png" width="900">             
-</p>\
+</p>
 
 &nbsp; Dermoscopic Image &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  BWT Feature Map &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Ground Truth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Predicted Mask &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  lesion boundary
 
 # Conclusion
 The Use of inexpensive Berkeley wavelet transform helps in enhancing the minutiae details of the skin lesion that helped in achieving an improved algorithm for accurate and automatic skin lesion segmentation. Furthermore, the model is computationally efficient with 1.2 Million parameters, and only takes 0.0625 seconds to segment the lesion from the dermoscopic image, making it extremely useful in clinical settings.
 
+
+[1] The Berkeley Wavelet Transform: A biologically-inspired orthogonal wavelet transform, DOI: 10.1162/neco.2007.05-07-513 
