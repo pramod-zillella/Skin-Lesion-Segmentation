@@ -95,5 +95,7 @@ The Use of inexpensive Berkeley wavelet transform helps in enhancing the minutia
 
 
 [1] Ben Willmore, Ryan J. Prenger, Michael C.-K. Wu, Jack L. Gallant; The Berkeley Wavelet Transform: A Biologically Inspired Orthogonal Wavelet Transform. Neural Comput 2008; 20 (6): 1537–1564. doi: https://doi.org/10.1162/neco.2007.05-07-513
+
 [2] N. C. F. Codella et al., "Skin lesion analysis toward melanoma detection: A challenge at the 2017 International symposium on biomedical imaging (ISBI), hosted by the international skin imaging collaboration (ISIC)," 2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018), 2018, pp. 168-172, doi: https://doi.org/10.1109/ISBI.2018.8363547.
+
 [3] T. Mendonça, P. M. Ferreira, J. S. Marques, A. R. S. Marcal and J. Rozeira, "PH2 - A dermoscopic image database for research and benchmarking," 2013 35th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2013, pp. 5437-5440, doi: https://doi.org/10.1109/EMBC.2013.6610779.
