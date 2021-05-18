@@ -18,6 +18,17 @@ The dermoscopic images are pre-processed using Berkeley wavelet transform by app
 ## Network architecture
 ![Network](https://user-images.githubusercontent.com/63542593/118666798-13bc6280-b811-11eb-93b7-697e7237b031.png)
 
+## Quantitative Segmentation Results
+
+<p align="center">
+  
+| Dataset  | Sensitivity | Accuracy | Dice | Jaccard Similarity | 
+| :---: | :---: | :---: | :---: | :---: |
+|    PH2    | 96.44  | 96.89  | 96.42  | 93.11  |
+| ISIC 2017 | 92.46  | 95.64  | 88.20  | 78.89  |
+
+</p>
+
 ## Semgentation Visualization Results
 
 <p align="center">
@@ -75,8 +86,10 @@ The dermoscopic images are pre-processed using Berkeley wavelet transform by app
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118668845-da84f200-b812-11eb-83be-00eea0286c92.png" width="900">             
-</p>
-
+</p>\
 
 &nbsp; Dermoscopic Image &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  BWT Feature Map &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Ground Truth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Predicted Mask &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  lesion boundary
+
+# Conclusion
+The Use of inexpensive Berkeley wavelet transform helps in enhancing the minutiae details of the skin lesion that helped in achieving an improved algorithm for accurate and automatic skin lesion segmentation. Furthermore, the model is computationally efficient with 1.2 Million parameters, and only takes 0.0625 seconds to segment the lesion from the dermoscopic image, making it extremely useful in clinical settings.
 
