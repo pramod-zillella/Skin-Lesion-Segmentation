@@ -6,10 +6,10 @@ variations of lesion appearances across different patients.Clinical treatment of
 of lesion boundaries for accurate cancerous region localization.
 
 ## Introduction
-We present a fully automated architecture for accurately detecting border and segmenting the skin lesion by coupling a deep learning model with the Berkeley wavelet transform map derived from the specific kernel filters. Our proposed method effectively combines the Berkeley wavelet transform feature maps into a deep learning U-Net model trained in an end-to-end manner, which results in the reduction of the number of trainable parameters.
+We present a fully automated architecture for accurately detecting border and segmenting the skin lesion by coupling a deep learning model with the Berkeley wavelet transform map derived from the specific kernel filters. Our proposed method effectively combines the Berkeley wavelet transform feature maps into a deep learning U-Net model trained in an end-to-end manner, which results in the reduction of the number of trainable parameters. The model was trained on [HAM10000](https://www.nature.com/articles/s41591-020-0942-0) and [ISIC training data](https://ieeexplore.ieee.org/document/8363547) and test on [PH2](https://ieeexplore.ieee.org/document/6610779) and ISIC Validation data.
 
 ## Preprocessing
-The dermoscopic images are pre-processed using Berkeley wavelet transform[1] by applying the 8 mother wavelets on the dermoscopic images to form the berkeley wavelet decomposed image. 
+The dermoscopic images are pre-processed using [Berkeley wavelet transform](https://direct.mit.edu/neco/article/20/6/1537/7305/The-Berkeley-Wavelet-Transform-A-Biologically) by applying the 8 mother wavelets on the dermoscopic images to form the berkeley wavelet decomposed image. 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118661413-b9210780-b80c-11eb-8896-c551c1877c8c.png" width="700">             
 </p>
@@ -24,8 +24,8 @@ The dermoscopic images are pre-processed using Berkeley wavelet transform[1] by 
   
 | Dataset  | Sensitivity | Accuracy | Dice | Jaccard Similarity | 
 | :---: | :---: | :---: | :---: | :---: |
-|    PH2 [2]    | 96.44  | 96.89  | 96.42  | 93.11  |
-| ISIC 2017 [3] | 92.46  | 95.64  | 88.20  | 78.89  |
+|    [PH2](https://ieeexplore.ieee.org/document/6610779)    | 96.44  | 96.89  | 96.42  | 93.11  |
+| [ISIC 2017](https://challenge.isic-archive.com/landing/2017) | 92.46  | 95.64  | 88.20  | 78.89  |
 
 </p>
 
@@ -92,10 +92,3 @@ The dermoscopic images are pre-processed using Berkeley wavelet transform[1] by 
 
 # Conclusion
 The Use of inexpensive Berkeley wavelet transform helps in enhancing the minutiae details of the skin lesion that helped in achieving an improved algorithm for accurate and automatic skin lesion segmentation. Furthermore, the model is computationally efficient with 1.2 Million parameters, and only takes 0.0625 seconds to segment the lesion from the dermoscopic image, making it extremely useful in clinical settings.
-
-
-[1] Ben Willmore, Ryan J. Prenger, Michael C.-K. Wu, Jack L. Gallant; The Berkeley Wavelet Transform: A Biologically Inspired Orthogonal Wavelet Transform. Neural Comput 2008; 20 (6): 1537–1564. doi: https://doi.org/10.1162/neco.2007.05-07-513
-
-[2] N. C. F. Codella et al., "Skin lesion analysis toward melanoma detection: A challenge at the 2017 International symposium on biomedical imaging (ISBI), hosted by the international skin imaging collaboration (ISIC)," 2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018), 2018, pp. 168-172, doi: https://doi.org/10.1109/ISBI.2018.8363547.
-
-[3] T. Mendonça, P. M. Ferreira, J. S. Marques, A. R. S. Marcal and J. Rozeira, "PH2 - A dermoscopic image database for research and benchmarking," 2013 35th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2013, pp. 5437-5440, doi: https://doi.org/10.1109/EMBC.2013.6610779.
