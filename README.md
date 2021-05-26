@@ -29,7 +29,7 @@ The dermoscopic images are pre-processed using [Berkeley wavelet transform](http
 
 </p>
 
-## Semgentation Visualization Results
+## Segmentation Visualization Results
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118668023-1ec3c280-b812-11eb-831a-03903d6ef51e.png" width="900">             
