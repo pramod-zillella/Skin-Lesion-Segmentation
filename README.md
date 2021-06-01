@@ -70,7 +70,5 @@ The dermoscopic images are pre-processed using [Berkeley wavelet transform](http
 <img src="https://user-images.githubusercontent.com/63542593/118668845-da84f200-b812-11eb-83be-00eea0286c92.png" width="900">             
 </p>
 
-
-
-# Conclusion
+## Conclusion
 The Use of inexpensive Berkeley wavelet transform helps in enhancing the minutiae details of the skin lesion that helped in achieving an improved algorithm for accurate and automatic skin lesion segmentation. Furthermore, the model is computationally efficient with 1.2 Million parameters, and only takes 0.0625 seconds to segment the lesion from the dermoscopic image, making it extremely useful in clinical settings.
