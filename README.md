@@ -33,7 +33,7 @@ The dermoscopic images are pre-processed using [Berkeley wavelet transform](http
 </p>
 
 ## Segmentation Visualization Results
-###### &nbsp; &nbsp; &nbsp; Dermoscopic Image &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BWT Feature Map &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Ground Truth &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BWT+UNET Predicted Mask &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Border Detected Skin Lesion
+###### &nbsp; &nbsp; &nbsp; Dermoscopic Image &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BWT Feature Map &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Ground Truth &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BWT+UNET Predicted Mask &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Border Detected Skin Lesion
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118668023-1ec3c280-b812-11eb-831a-03903d6ef51e.png" width="900">             
 </p>
