@@ -1,6 +1,6 @@
-# Skin-Lesion-Segmentation
+## Skin-Lesion-Segmentation
 
-## Background
+### Background
 Automatic skin lesion segmentation on dermoscopic images is an essential step in computer-aided diagnosis of melanoma. However, this task is challenging due to significant
 variations of lesion appearances across different patients.Clinical treatment of skin lesion is primarily dependent on timely detection and delimitation
 of lesion boundaries for accurate cancerous region localization.
@@ -8,20 +8,20 @@ of lesion boundaries for accurate cancerous region localization.
 For the accessing the interactive notebooks:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Pramod04121999/Skin-Lesion-Segmentation/HEAD)
 
-## Introduction
+### Introduction
 We present a fully automated architecture for accurately detecting border and segmenting the skin lesion by coupling a deep learning model with the Berkeley wavelet transform map derived from the specific kernel filters. Our proposed method effectively combines the Berkeley wavelet transform feature maps into a deep learning U-Net model trained in an end-to-end manner, which results in the reduction of the number of trainable parameters. The model was trained on [HAM10000](https://www.nature.com/articles/s41591-020-0942-0) and [ISIC training data](https://ieeexplore.ieee.org/document/8363547) and test on [PH2](https://ieeexplore.ieee.org/document/6610779) and ISIC Validation data.
 
-## Preprocessing
+### Preprocessing
 The dermoscopic images are pre-processed using [Berkeley wavelet transform](https://direct.mit.edu/neco/article/20/6/1537/7305/The-Berkeley-Wavelet-Transform-A-Biologically) by applying the 8 mother wavelets on the dermoscopic images to form the berkeley wavelet decomposed image. 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118661413-b9210780-b80c-11eb-8896-c551c1877c8c.png" width="700">             
 </p>
 
 
-## Network architecture
+### Network architecture
 ![Network](https://user-images.githubusercontent.com/63542593/118666798-13bc6280-b811-11eb-93b7-697e7237b031.png)
 
-## Quantitative Segmentation Results
+### Quantitative Segmentation Results
 
 <p align="center">
   
@@ -32,7 +32,7 @@ The dermoscopic images are pre-processed using [Berkeley wavelet transform](http
 
 </p>
 
-## Segmentation Visualization Results
+### Segmentation Visualization Results
 ###### &nbsp; &nbsp; &nbsp; Dermoscopic Image &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BWT Feature Map &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Ground Truth &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BWT+UNET Predicted Mask &nbsp;&nbsp; Border Detected Lesion
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118668023-1ec3c280-b812-11eb-831a-03903d6ef51e.png" width="900">             
@@ -70,5 +70,5 @@ The dermoscopic images are pre-processed using [Berkeley wavelet transform](http
 <img src="https://user-images.githubusercontent.com/63542593/118668845-da84f200-b812-11eb-83be-00eea0286c92.png" width="900">             
 </p>
 
-## Conclusion
+### Conclusion
 The Use of inexpensive Berkeley wavelet transform helps in enhancing the minutiae details of the skin lesion that helped in achieving an improved algorithm for accurate and automatic skin lesion segmentation. Furthermore, the model is computationally efficient with 1.2 Million parameters, and only takes 0.0625 seconds to segment the lesion from the dermoscopic image, making it extremely useful in clinical settings.
